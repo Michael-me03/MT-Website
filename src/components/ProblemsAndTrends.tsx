@@ -46,16 +46,16 @@ const ProblemsAndTrends = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-soft-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-destructive/10 text-destructive border-destructive/20">
             Marktanalyse
           </Badge>
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-midnight mb-6 animate-fade-in">
             Probleme & Trends
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-midnight/70 max-w-3xl mx-auto">
             Der Einzelhandel steht vor großen Herausforderungen, aber auch enormen Chancen
           </p>
         </div>
@@ -69,15 +69,19 @@ const ProblemsAndTrends = () => {
             </h3>
             <div className="space-y-6">
               {problems.map((problem, index) => (
-                <Card key={index} className="border-destructive/20 hover:shadow-lg transition-all duration-300">
+                <Card 
+                  key={index} 
+                  className="bg-white border-destructive/20 hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer group animate-slide-up"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
-                      <div className="bg-destructive/10 p-3 rounded-lg">
-                        <problem.icon className="h-6 w-6 text-destructive" />
+                      <div className="bg-destructive/10 p-3 rounded-lg group-hover:bg-destructive/20 transition-colors duration-300">
+                        <problem.icon className="h-6 w-6 text-destructive group-hover:scale-110 transition-transform duration-300" />
                       </div>
                       <div className="flex-1">
-                        <h4 className="font-semibold text-lg mb-2">{problem.title}</h4>
-                        <p className="text-muted-foreground mb-3">{problem.description}</p>
+                        <h4 className="font-semibold text-lg mb-2 text-midnight">{problem.title}</h4>
+                        <p className="text-midnight/70 mb-3">{problem.description}</p>
                         <Badge variant="destructive" className="text-xs">
                           {problem.impact}
                         </Badge>
@@ -97,15 +101,19 @@ const ProblemsAndTrends = () => {
             </h3>
             <div className="space-y-6">
               {trends.map((trend, index) => (
-                <Card key={index} className="border-forest-green/20 hover:shadow-lg transition-all duration-300">
+                <Card 
+                  key={index} 
+                  className="bg-white border-forest-green/20 hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer group animate-slide-up"
+                  style={{ animationDelay: `${(index + 3) * 0.1}s` }}
+                >
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
-                      <div className="bg-forest-green/10 p-3 rounded-lg">
-                        <trend.icon className="h-6 w-6 text-forest-green" />
+                      <div className="bg-forest-green/10 p-3 rounded-lg group-hover:bg-forest-green/20 transition-colors duration-300">
+                        <trend.icon className="h-6 w-6 text-forest-green group-hover:scale-110 transition-transform duration-300" />
                       </div>
                       <div className="flex-1">
-                        <h4 className="font-semibold text-lg mb-2">{trend.title}</h4>
-                        <p className="text-muted-foreground mb-3">{trend.description}</p>
+                        <h4 className="font-semibold text-lg mb-2 text-midnight">{trend.title}</h4>
+                        <p className="text-midnight/70 mb-3">{trend.description}</p>
                         <Badge className="text-xs bg-forest-green/10 text-forest-green border-forest-green/20">
                           {trend.stat}
                         </Badge>
@@ -119,12 +127,12 @@ const ProblemsAndTrends = () => {
         </div>
 
         {/* Solution teaser */}
-        <div className="mt-16 text-center">
-          <div className="bg-gradient-to-r from-forest-green/10 to-gold-accent/10 rounded-2xl p-8 border border-gold-accent/20">
-            <h3 className="text-2xl font-bold text-foreground mb-4">
+        <div className="mt-16 text-center animate-fade-in">
+          <div className="bg-gradient-to-r from-forest-green/10 to-gold-accent/10 rounded-2xl p-8 border border-gold-accent/20 hover:shadow-lg hover:scale-105 transition-all duration-300">
+            <h3 className="text-2xl font-bold text-midnight mb-4">
               Moon Technologies löst diese Herausforderungen
             </h3>
-            <p className="text-muted-foreground text-lg">
+            <p className="text-midnight/70 text-lg">
               Mit Ivy und Fay bieten wir die perfekte Antwort auf alle genannten Probleme 
               und nutzen gleichzeitig die positiven Markttrends optimal aus.
             </p>
