@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import moonLogo from "@/assets/moon-technologies-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,12 +19,11 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-to-r from-gold-accent to-gold-dark rounded-lg flex items-center justify-center">
-              <span className="text-midnight font-bold text-xl">M</span>
-            </div>
-            <span className="text-xl font-bold text-soft-white">
-              Moon Technologies
-            </span>
+            <img 
+              src={moonLogo} 
+              alt="Moon Technologies" 
+              className="h-8"
+            />
           </div>
 
           {/* Desktop Navigation */}

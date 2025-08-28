@@ -46,7 +46,7 @@ const ProblemsAndTrends = () => {
   ];
 
   return (
-    <section className="py-20 bg-muted/30">
+    <section className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-destructive/10 text-destructive border-destructive/20">

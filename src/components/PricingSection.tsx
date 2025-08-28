@@ -9,13 +9,14 @@ const PricingSection = () => {
       name: "Starter",
       description: "Perfekt für kleine Geschäfte",
       price: "2,5%",
-      priceDetail: "+ min. 10¢ pro Transaktion",
+      priceDetail: "+ min. 0,10 € pro Transaktion",
       features: [
         "Ivy Produkterkennung",
         "Fay Gesichtszahlung", 
         "Stripe Integration",
         "Basis Support",
-        "Bis zu 1.000 Transaktionen/Monat"
+        "Bis zu 5 Kassensysteme",
+        "Standard Hardware Support"
       ],
       popular: false,
       cta: "Jetzt starten"
@@ -24,14 +25,15 @@ const PricingSection = () => {
       name: "Professional",
       description: "Ideal für mittelständische Unternehmen",
       price: "2,0%",
-      priceDetail: "+ min. 8¢ pro Transaktion",
+      priceDetail: "+ min. 0,08 € pro Transaktion",
       features: [
         "Alle Starter Features",
         "Erweiterte Analytics",
         "Multi-Store Management",
         "Priority Support",
-        "Bis zu 10.000 Transaktionen/Monat",
-        "Custom Hardware Support"
+        "Bis zu 50 Kassensysteme",
+        "Premium Hardware Support",
+        "Custom Branding"
       ],
       popular: true,
       cta: "Beliebte Wahl"
@@ -46,9 +48,10 @@ const PricingSection = () => {
         "Dedizierter Account Manager",
         "White-Label Lösung",
         "24/7 Premium Support",
-        "Unbegrenzte Transaktionen",
+        "Unbegrenzte Kassensysteme",
         "Custom API Integration",
-        "SLA Garantie"
+        "SLA Garantie",
+        "Vor-Ort Installation"
       ],
       popular: false,
       cta: "Kontakt aufnehmen"
@@ -56,7 +59,7 @@ const PricingSection = () => {
   ];
 
   return (
-    <section id="pricing" className="py-20 bg-muted/30">
+    <section id="pricing" className="py-20 bg-card">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-gold-accent/10 text-gold-dark border-gold-accent/20">

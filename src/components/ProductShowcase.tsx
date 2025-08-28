@@ -2,12 +2,22 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Eye, Scan, Zap, Shield, ArrowRight } from "lucide-react";
+import ivyFayLogos from "@/assets/ivy-fay-logos.png";
 
 const ProductShowcase = () => {
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-card">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
+          {/* Ivy & Fay Logos */}
+          <div className="mb-8">
+            <img 
+              src={ivyFayLogos} 
+              alt="Ivy & Fay Logos" 
+              className="h-32 mx-auto"
+            />
+          </div>
+          
           <Badge className="mb-4 bg-primary/10 text-primary border-primary/20">
             Unsere Technologie
           </Badge>
@@ -116,7 +126,7 @@ const ProductShowcase = () => {
                   Stripe Integration
                 </Badge>
                 <Badge className="bg-gold-accent/10 text-gold-dark border-gold-accent/20">
-                  2,5% + min. 10¢
+                  2,5% + min. 0,10 €
                 </Badge>
                 <Badge className="bg-midnight/10 text-midnight border-midnight/20">
                   DSGVO-konform

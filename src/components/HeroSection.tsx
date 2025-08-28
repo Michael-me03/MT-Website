@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Zap, ShieldCheck, TrendingUp } from "lucide-react";
 import heroImage from "@/assets/hero-payment-tech.jpg";
+import moonLogo from "@/assets/moon-technologies-logo.png";
 
 const HeroSection = () => {
   return (
@@ -18,6 +19,15 @@ const HeroSection = () => {
       
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
+        {/* Logo */}
+        <div className="mb-8">
+          <img 
+            src={moonLogo} 
+            alt="Moon Technologies Logo" 
+            className="h-20 mx-auto mb-4"
+          />
+        </div>
+        
         <Badge className="mb-6 bg-gold-accent/20 text-gold-accent border-gold-accent/30">
           <Zap className="mr-2 h-4 w-4" />
           Revolutionäre Zahlungstechnologie
@@ -50,7 +60,7 @@ const HeroSection = () => {
             <div className="text-soft-white/70">Transaktionsgebühr</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-gold-accent mb-2">Min. 10¢</div>
+            <div className="text-3xl font-bold text-gold-accent mb-2">Min. 0,10 €</div>
             <div className="text-soft-white/70">Pro Zahlung</div>
           </div>
           <div className="text-center">

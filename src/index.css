@@ -8,14 +8,14 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 157 25% 20%;
+    --background: 157 20% 8%;
+    --foreground: 0 0% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 157 25% 20%;
+    --card: 157 25% 12%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 157 25% 20%;
+    --popover: 157 25% 12%;
+    --popover-foreground: 0 0% 95%;
 
     --primary: 157 45% 25%;
     --primary-foreground: 0 0% 98%;
@@ -23,8 +23,8 @@ All colors MUST be HSL.
     --secondary: 45 85% 70%;
     --secondary-foreground: 157 45% 25%;
 
-    --muted: 157 10% 95%;
-    --muted-foreground: 157 15% 45%;
+    --muted: 157 20% 15%;
+    --muted-foreground: 157 15% 65%;
 
     --accent: 45 85% 70%;
     --accent-foreground: 157 45% 25%;
@@ -32,8 +32,8 @@ All colors MUST be HSL.
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 157 20% 90%;
-    --input: 157 20% 90%;
+    --border: 157 20% 20%;
+    --input: 157 20% 18%;
     --ring: 157 45% 25%;
 
     /* Brand colors */
@@ -73,22 +73,22 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 220 25% 15%;
+    --background: 220 25% 5%;
     --foreground: 0 0% 98%;
 
-    --card: 157 55% 15%;
+    --card: 157 55% 8%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 157 55% 15%;
+    --popover: 157 55% 8%;
     --popover-foreground: 0 0% 98%;
 
     --primary: 45 85% 70%;
     --primary-foreground: 220 25% 15%;
 
-    --secondary: 157 35% 20%;
+    --secondary: 157 35% 15%;
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 157 35% 20%;
+    --muted: 157 35% 10%;
     --muted-foreground: 157 20% 70%;
 
     --accent: 45 85% 70%;
@@ -97,8 +97,8 @@ All colors MUST be HSL.
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 157 35% 20%;
-    --input: 157 35% 20%;
+    --border: 157 35% 15%;
+    --input: 157 35% 12%;
     --ring: 45 85% 70%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
